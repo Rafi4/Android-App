@@ -1,0 +1,284 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Activity2">
+
+
+    <LinearLayout
+        android:id="@+id/container_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/windImage"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bc_icons"
+                        android:scaleType="fitCenter"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        android:src="@drawable/wind_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/wind" />
+
+                    <SeekBar
+                        android:id="@+id/seekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:progress="50"
+                        android:scaleX="0"
+                        android:scaleY="0" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/bonfireImage"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bc_icons"
+                        android:scaleType="fitCenter"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        app:srcCompat="@drawable/bonfire_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/bonfire"
+                        android:textColor="#ffffff" />
+
+                    <SeekBar
+                        android:id="@+id/seekBar2"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:progress="50"
+                        android:scaleX="0"
+                        android:scaleY="0" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/jungleImage"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:layout_column="2"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bc_icons"
+                        android:scaleType="fitCenter"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        app:srcCompat="@drawable/jungle_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/jungle" />
+
+                    <SeekBar
+                        android:id="@+id/seekBar3"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:progress="50"
+                        android:scaleX="0"
+                        android:scaleY="0" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/birdImage"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:background="@drawable/bc_icons"
+                        android:contentDescription="TODO"
+                        android:scaleType="fitCenter"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        android:src="@drawable/origami_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Bird" />
+
+                    <SeekBar
+                        android:id="@+id/seekBar4"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:progress="50"
+                        android:scaleX="0"
+                        android:scaleY="0" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/pianoImage"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+
+                        android:background="@drawable/bc_icons"
+                        android:scaleType="fitCenter"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        app:srcCompat="@drawable/piano_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Piaono" />
+
+                    <SeekBar
+                        android:id="@+id/seekBar5"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:progress="50"
+                        android:scaleX="0"
+                        android:scaleY="0" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/tentImage"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+
+                        android:background="@drawable/bc_icons"
+                        android:scaleType="fitCenter"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        app:srcCompat="@drawable/tent_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/jungle" />
+
+                    <SeekBar
+                        android:id="@+id/seekBar6"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:progress="50"
+                        android:scaleX="0"
+                        android:scaleY="0" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

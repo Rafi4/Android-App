@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Swipe2</string>
+    <string name="tab_text1" translatable="false">Tab 1</string>
+    <string name="tab_text2" translatable="false">Tab 2</string>
+    <string name="tab_text3" translatable="false">Tab 3</string>
+    <string name="hello_blank_fragment1" translatable="false">Hello blank fragment1</string>
+    <string name="hello_blank_fragment2" translatable="false">Hello blank fragment2</string>
+    <string name="hello_blank_fragment3" translatable="false">Hello blank fragment3</string>
+    <string name="bonfire">Bonfire</string>
+    <string name="jungle">Jungle</string>
+    <string name="alarm" translatable="false">alarm</string>
+    <string name="bird">Birds</string>
+    <string name="piano">Piano</string>
+    <string name="bird2" translatable="false">Bird</string>
+    <string name="piano2" translatable="false">Piano</string>
+    <string name="wind" tools:ignore="DuplicateDefinition">Wind</string>
+    <string name="android_development" translatable="false">Android Development</string>
+    <string name="good_dream" translatable="false">Good Dream</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

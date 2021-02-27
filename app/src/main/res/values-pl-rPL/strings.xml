@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Swipe2</string>
+    <string name="wind">Wiatr</string>
+    <string name="bonfire">Ognisko</string>
+    <string name="jungle">Dżungla</string>
+    <string name="bird">Ptaki</string>
+    <string name="piano">Pianino</string>
+</resources>
