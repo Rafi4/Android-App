@@ -1,5 +1,4 @@
 package com.example.swipe2.View;
-
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,14 +11,11 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.swipe2.Adapter_special;
 import com.example.swipe2.R;
 import com.example.swipe2.ViewModel.ShareViewModel;
-
 import java.util.ArrayList;
 import java.util.List;
-
 
 public class Activity3 extends Fragment {
 
@@ -37,8 +33,6 @@ public class Activity3 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_tab3, container, false);
-
-
         dataList = v.findViewById(R.id.dataList2);
         imageView = v.findViewById(R.id.imageFragment2);
 
@@ -70,7 +64,6 @@ public class Activity3 extends Fragment {
         dataList.setLayoutManager(gridLayoutManager);
         dataList.setAdapter(adapterSpecial);
 
-
         viewModel = new ViewModelProvider(requireActivity()).get(ShareViewModel.class);
         viewModel.getImage().observe(getViewLifecycleOwner(), new Observer<Drawable>() {
             @Override
@@ -83,6 +76,4 @@ public class Activity3 extends Fragment {
 
         return v;
     }
-
-
 }
