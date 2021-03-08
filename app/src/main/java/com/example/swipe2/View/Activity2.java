@@ -224,12 +224,10 @@ public class Activity2 extends Fragment {
 
                 if(isFav4) {
                     birdVolume.setScaleX(1);
-                    birdVolume.setScaleY(1);
-                    //    buttonSoundJungle.setImageResource(R.drawable.jungle_on);
+                    birdVolume.setScaleY(1);       
                 } else {
                     birdVolume.setScaleX(0);
-                    birdVolume.setScaleX(0);
-                    //    buttonSoundJungle.setImageResource(R.drawable.jungle_off);
+                    birdVolume.setScaleX(0);  
                 }
 
                 if (mediaPlayerBird.isPlaying()) {
