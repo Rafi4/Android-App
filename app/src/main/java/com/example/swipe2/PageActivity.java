@@ -1,10 +1,8 @@
 package com.example.swipe2;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-
 import com.example.swipe2.View.Activity1;
 import com.example.swipe2.View.Activity2;
 import com.example.swipe2.View.Activity3;
@@ -18,12 +16,7 @@ public class PageActivity extends FragmentPagerAdapter {
     public PageActivity(FragmentManager fm, int numbeActivity) {
         super(fm);
         this.numberActivity = numbeActivity;
-
     }
-
-
-
-
     @NonNull
     @Override
     public Fragment getItem(int position) {
@@ -37,12 +30,8 @@ public class PageActivity extends FragmentPagerAdapter {
                 return new Activity3();
             default:
                 return null;
-
         }
-
     }
-
-
 
     @Override
     public int getCount() {
@@ -54,6 +43,4 @@ public class PageActivity extends FragmentPagerAdapter {
 
         return POSITION_NONE;
     }
-
-
 }
