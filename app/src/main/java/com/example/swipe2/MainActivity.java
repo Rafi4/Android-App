@@ -89,17 +89,6 @@ public class MainActivity extends AppCompatActivity {
         pageradapter = new PageActivity(getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(pageradapter);
 
-
-
-      /*     buttonWidget.setOnClickListener(new View.OnClickListener() {
-               @Override
-                public void onClick(View view) {
-                       Intent intent = new Intent(view.getContext(), ActivityWidget.class);
-                       startActivity(intent);
-                     Log.i(TAG , "button działa");
-                }
-            });*/
-
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
@@ -138,9 +127,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Reset Timer
-        // Możliwy Crasch przez  pb.setProgress(60);
-
-
+      
         mButtonReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -151,8 +138,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    // Przycisk OK na klawiaturze
-    // Możliwy Crash przez  pb.setProgress(60);
+  
+   // OK button on the keyboard
 
     @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {
@@ -210,9 +197,6 @@ public class MainActivity extends AppCompatActivity {
                 mTimerRunning = false;
                 updateWatchInterface();
                 System.exit(0);
-
-               // mediaPlayerBonfire.pause();
-
             }
         }.start();
         mTimerRunning = true;
