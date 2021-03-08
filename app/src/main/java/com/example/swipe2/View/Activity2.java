@@ -1,5 +1,4 @@
 package com.example.swipe2.View;
-
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,10 +14,6 @@ import com.example.swipe2.R;
 
 
 public class Activity2 extends Fragment {
-
-
-
-
 
     ImageButton buttonSoundsWind;
     ImageButton buttonSoundBonfire;
@@ -287,10 +282,6 @@ public class Activity2 extends Fragment {
                     mediaPlayerForest.start();
             }
         });
-
-
-
         return view;
     }
-
 }
