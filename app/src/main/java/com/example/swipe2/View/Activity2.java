@@ -7,11 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.SeekBar;
-
 import androidx.fragment.app.Fragment;
-
 import com.example.swipe2.R;
-
 
 public class Activity2 extends Fragment {
 
