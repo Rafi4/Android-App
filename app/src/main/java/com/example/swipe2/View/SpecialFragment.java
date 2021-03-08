@@ -1,5 +1,4 @@
 package com.example.swipe2.View;
-
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,9 +17,7 @@ import com.example.swipe2.ViewModel.ShareViewModel;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class SpecialFragment extends Fragment {
-
     RecyclerView getDataList;
     List<String> titles;
     List<Integer> images;
@@ -35,8 +32,6 @@ public class SpecialFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.special_fragment, container, false);
-
-
         dataList = v.findViewById(R.id.dataList2);
         imageView = v.findViewById(R.id.imageFragment);
 
@@ -65,8 +60,7 @@ public class SpecialFragment extends Fragment {
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(),1,GridLayoutManager.HORIZONTAL,false);
         dataList.setLayoutManager(gridLayoutManager);
         dataList.setAdapter(adapterSpecial);
-
-
+        
         viewModel = new ViewModelProvider(requireActivity()).get(ShareViewModel.class);
         viewModel.getImage().observe(getViewLifecycleOwner(), new Observer<Drawable>() {
             @Override
@@ -76,9 +70,6 @@ public class SpecialFragment extends Fragment {
                 Log.i("TAG", imageView+"ActivityWidget imageView it's work");
             }
         });
-
        return v;
     }
-
-
 }
